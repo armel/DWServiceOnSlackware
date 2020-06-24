@@ -1,1 +1,1 @@
-# DWServiceSlack
+# DWServiceSlackware
