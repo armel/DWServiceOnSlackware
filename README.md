@@ -1,4 +1,4 @@
-# DWServiceSlackware
+# DWServiceOnSlackware
 
 Install DWService on Slackware 14.2
 
