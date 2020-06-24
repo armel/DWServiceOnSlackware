@@ -1,0 +1,27 @@
+#!/bin/sh
+#
+# /etc/rc.d/rc.dwservice
+#
+# Start/stop DWService
+#
+
+start() {
+  /bin/sh -c '"/usr/share/dwagent/native/dwagsvc" start_internal'
+}
+
+stop() {
+  /bin/sh -c '"/usr/share/dwagent/native/dwagsvc" stop_internal'
+}
+
+case "$1" in 
+    start)
+       start
+       ;;
+    stop)
+       stop
+       ;;
+    *)
+       echo "Usage: $0 {start|stop}"
+esac
+
+exit 0 
